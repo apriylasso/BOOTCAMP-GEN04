@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#7ADAE8, #0BA1DD);
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 30px 100px;
+}
+
+h1, p, ul, li, a {
+    display: inline-block;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.myweb {
+    font-size: 34px;
+    font-weight: 700;
+    margin-right: 26px;
+}
+
+nav ul li {
+    margin-left: 28px;
+}
+
+nav ul li a {
+    font-size: 20px;
+
+}
+
+.container {
+    margin-top: 200px;
+    display: flex;
+}
+
+.container-left {
+    width: 65%;
+    display: inline-block;
+    padding: 10px 100px 10px;
+}
+
+.container-right {
+    width: 50%;
+    margin-top: -60px;
+    margin-right: -100px;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1vw;
+    margin-top: 20px;
+}
+
+img {
+    width: 80%;
+}
+
+.container-left button {
+    width: 16vw;
+    height: 3vw;
+    border-color: #FFFFFF;
+    border-radius: 1vh;
+    margin-top: 3vw;
+    margin-right: 3vh;
+    display: inline-block;
+}
+
+.chatme {
+    font-size: 1.6vw;
+    color: #0BA1DD;
+    background: #FFFFFF;
+    border: 0.2vw solid #FFFFFF;
+    cursor: pointer;
+}
+
+.more {
+    font-size: 1.6vw;
+    color: #ffff;
+    background: none;
+    border: 0.2vw solid #FFFFFF;
+    cursor: pointer;
+}
+
+.chatme:hover {
+    background: #10abe9;
+    color: #ffff;
+}
+
+.more:hover {
+    background: #02415a;
+}
