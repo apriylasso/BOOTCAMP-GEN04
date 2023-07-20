@@ -9,6 +9,7 @@
 body {
     background: linear-gradient(#7ADAE8, #0BA1DD);
     font-family: 'Inter', sans-serif;
+    height: 100vh;
 }
 
 nav {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let saldo = 0; // Saldo awal
+
+        while (true) {
+          let menu = prompt(`Pilih menu yang ingin Anda akses:
+            1. Tarik Tunai
+            2. Setor Tunai
+            3. Cek Saldo
+            4. Keluar`);
+        
+          if (menu === '1') {
+            let tarikTunai = prompt('Masukkan jumlah tarik tunai:');
+            tarikTunai = parseFloat(tarikTunai);
+        
+            if (tarikTunai > saldo) {
+              alert('Saldo tidak mencukupi');
+            } else {
+              saldo -= tarikTunai;
+              alert(`Berhasil menarik tunai sejumlah ${tarikTunai}`);
+            }
+          } else if (menu === '2') {
+            let setorTunai = prompt('Masukkan jumlah setor tunai:');
+            setorTunai = parseFloat(setorTunai);
+        
+            if (isNaN(setorTunai) || setorTunai < 0) {
+              alert('Jumlah setor tunai tidak valid');
+            } else {
+              saldo += setorTunai;
+              alert(`Berhasil menyetor tunai sejumlah ${setorTunai}`);
+            }
+          } else if (menu === '3') {
+            alert(`Saldo Anda saat ini: ${saldo}`);
+          } else if (menu === '4') {
+            let konfirmasi = confirm('Apakah Anda yakin ingin keluar?');
+            if (konfirmasi) {
+              break;
+            }
+          } else {
+            alert('Menu tidak valid');
+          }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Sayangg, aku mau tanya</h3>
+    <img style="width: 10%;" src="kopray.jpg" alt="">
+    <p>Aku ganteng gak yang?</p>
+    <button id="btn-ya" onclick="alert('Nah gitu Dong, I Love You Honey')" style="background: rgb(16, 170, 246); width: 10vw; height: 2vw; border-radius: 0.5vw; font-size: 1vw; cursor: pointer; border: none;">Ganteng</button>
+    <button id="btn-gak" onclick="gak(this)" style="position: relative; background: rgb(243, 34, 34); width: 10vw; color: white; height: 2vw; border-radius: 0.5vw; font-size: 1vw; cursor: pointer; border: none;">Gak Ganteng</button>
+</body>
+<script>
+    function gak(id){
+        var ya = document.getElementById("btn-ya");
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + ya.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+    }
+</script>
+</html>
